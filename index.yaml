@@ -875,6 +875,29 @@ entries:
     version: 1.10.2-SNAPSHOT
   agent-plane:
   - apiVersion: v2
+    appVersion: 1.12.19-SNAPSHOT
+    created: "2024-04-17T14:52:00.179869345Z"
+    dependencies:
+    - alias: vault
+      condition: install.vault
+      name: vault
+      repository: https://helm.releases.hashicorp.com
+      version: 0.20.0
+    description: 'A Helm chart for an Agent-Enabled Tractus-X Data Plane which registers
+      at a running Control Plane.  This chart is intended for use with an _existing_
+      HashiCorp Vault and Tractusx Connector. '
+    digest: c38698e49f4d1627de53c68d6c2e2f72a060eaa81ab575bb637a663c0706188c
+    home: https://github.com/eclipse-tractusx/knowledge-agents-edc/
+    maintainers:
+    - name: Tractus-X Knowledge Agents Team
+    name: agent-plane
+    sources:
+    - https://github.com/eclipse-tractusx/knowledge-agents-edc/tree/main/charts/agent-connector
+    type: application
+    urls:
+    - https://github.com/catenax-ng/tx-knowledge-agents-edc/releases/download/agent-plane-1.12.19-SNAPSHOT/agent-plane-1.12.19-SNAPSHOT.tgz
+    version: 1.12.19-SNAPSHOT
+  - apiVersion: v2
     appVersion: 1.12.18-SNAPSHOT
     created: "2024-04-17T10:15:40.055388643Z"
     dependencies:
@@ -897,4 +920,22 @@ entries:
     urls:
     - https://github.com/catenax-ng/tx-knowledge-agents-edc/releases/download/agent-plane-1.12.18-SNAPSHOT/agent-plane-1.12.18-SNAPSHOT.tgz
     version: 1.12.18-SNAPSHOT
-generated: "2024-04-17T10:15:40.055466648Z"
+  agent-plane-azure-vault:
+  - apiVersion: v2
+    appVersion: 1.12.19-SNAPSHOT
+    created: "2024-04-17T14:52:00.407804241Z"
+    description: 'A Helm chart for an Agent-Enabled Tractus-X Data Plane which registers
+      at a running Control Plane.  This chart is intended for use with an _existing_
+      Azure Vault and Tractusx Connector. '
+    digest: cedfc757001bce4e43da47867199f1ac32197c9ba49abe8d237c0ce372d07d1b
+    home: https://github.com/eclipse-tractusx/knowledge-agents-edc/
+    maintainers:
+    - name: Tractus-X Knowledge Agents Team
+    name: agent-plane-azure-vault
+    sources:
+    - https://github.com/eclipse-tractusx/knowledge-agents-edc/tree/main/charts/agent-connector
+    type: application
+    urls:
+    - https://github.com/catenax-ng/tx-knowledge-agents-edc/releases/download/agent-plane-azure-vault-1.12.19-SNAPSHOT/agent-plane-azure-vault-1.12.19-SNAPSHOT.tgz
+    version: 1.12.19-SNAPSHOT
+generated: "2024-04-17T14:52:00.407900341Z"
