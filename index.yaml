@@ -873,4 +873,28 @@ entries:
     urls:
     - https://github.com/catenax-ng/tx-knowledge-agents-edc/releases/download/agent-connector-memory-1.10.2-SNAPSHOT/agent-connector-memory-1.10.2-SNAPSHOT.tgz
     version: 1.10.2-SNAPSHOT
-generated: "2024-04-17T09:57:56.669445164Z"
+  agent-plane:
+  - apiVersion: v2
+    appVersion: 1.12.18-SNAPSHOT
+    created: "2024-04-17T10:15:40.055388643Z"
+    dependencies:
+    - alias: vault
+      condition: install.vault
+      name: vault
+      repository: https://helm.releases.hashicorp.com
+      version: 0.20.0
+    description: 'A Helm chart for an Agent-Enabled Tractus-X Data Plane which registers
+      at a running Control Plane.  This chart is intended for use with an _existing_
+      HashiCorp Vault and Tractusx Connector. '
+    digest: bd40a943f91c8602bb373b752665c44dbdc840036f8dd8560fa93ec922b824ad
+    home: https://github.com/eclipse-tractusx/knowledge-agents-edc/
+    maintainers:
+    - name: Tractus-X Knowledge Agents Team
+    name: agent-plane
+    sources:
+    - https://github.com/eclipse-tractusx/knowledge-agents-edc/tree/main/charts/agent-connector
+    type: application
+    urls:
+    - https://github.com/catenax-ng/tx-knowledge-agents-edc/releases/download/agent-plane-1.12.18-SNAPSHOT/agent-plane-1.12.18-SNAPSHOT.tgz
+    version: 1.12.18-SNAPSHOT
+generated: "2024-04-17T10:15:40.055466648Z"
